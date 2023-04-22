@@ -1,7 +1,7 @@
 package com.ambula.UserLocationAPI.controller;
 
 import com.ambula.UserLocationAPI.model.UserLocation;
-import com.ambula.UserLocationAPI.service.UserLocationService;
+import com.ambula.UserLocationAPI.service.impl.LocationServiceImpl ;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.*;
 public class LocationController {
 
     @Autowired
-    private UserLocationService locationService;
+    private LocationServiceImpl locationService;
 
     @PostMapping("/create")
     public ResponseEntity<UserLocation> createLocation(@RequestBody UserLocation location) {
