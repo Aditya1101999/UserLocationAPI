@@ -11,6 +11,7 @@ public class User {
 
     private String username;
     private String role;
+    private String password;
 
     public User() {
     }
@@ -63,6 +64,12 @@ public class User {
         // Perform any necessary operations to delete the user with the given id
     }
 
-    // Other necessary methods go here
+    public void setPassword(String testpassword) {
+        this.password=testpassword;
+    }
+
+    public String getPassword() {
+        return password;
+    }
 }
 
