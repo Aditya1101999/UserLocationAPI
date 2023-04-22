@@ -1,6 +1,5 @@
 package com.ambula.UserLocationAPI.controller;
 
-
 import com.ambula.UserLocationAPI.model.User;
 import com.ambula.UserLocationAPI.service.UserService;
 import com.ambula.UserLocationAPI.service.impl.UserServiceImpl;
@@ -49,4 +48,3 @@ public class UserController {
         return ResponseEntity.notFound().build();
     }
 }
-

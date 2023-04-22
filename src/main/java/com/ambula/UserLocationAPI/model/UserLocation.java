@@ -1,6 +1,6 @@
 package com.ambula.UserLocationAPI.model;
 
-import javax.persistence.*;
+import jakarta.persistence.*;
 
 @Entity
 public class UserLocation {
