@@ -22,7 +22,10 @@ import com.ambula.UserLocationAPI.model.UserLocation;
 import com.ambula.UserLocationAPI.repository.UserRepository;
 import com.ambula.UserLocationAPI.repository.LocationRepository;
 
+import org.springframework.boot.test.context.SpringBootTest; // annotation for spring boot test
 
+
+@SpringBootTest // annotation for spring boot test
 public class UserLocationServiceImplTest {
 
     @Mock
@@ -113,7 +116,6 @@ public class UserLocationServiceImplTest {
 
         assertThat(userLocations).containsExactly(testLocation);
     }
-
     @Test
     void testGetNearestLocations() {
         List<UserLocation> locations = new ArrayList<>();
